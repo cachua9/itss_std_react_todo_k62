@@ -6,13 +6,18 @@
 */
 const handleClickCheckBox = (key) =>{
   const element = document.getElementById(key);
-  element.style.color = 'grey'
+  if(element.style.color != 'grey'){
+    element.style.color = 'grey'
+  }
+  else{
+    element.style.color = 'black'
+  }
 }
 
 function TodoItem( {item} ) {
   return (
-    <label className="panel-block">
-      <input type="checkbox" onclick={() => handleClickCheckBox(item.key)} />
+    <label className="panel-block" id={item.key}>
+      <input type="checkbox" onClick={() => handleClickCheckBox(item.key)} />
       {item.text}
     </label>
   );
