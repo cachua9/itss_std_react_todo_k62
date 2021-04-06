@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 
 /* 
-  【Todoのデータ構成】
-　・key：Todoを特定するID（String）
-　・text：Todoの内容（String）
-　・done：完了状態（Boolean true:完了済み,, false:未完了）
+  x）
 */
 
 /* コンポーネント */
@@ -33,10 +30,7 @@ function Todo() {
         ITSS ToDoアプリ
       </div>
       {items.map(item => (
-        <label className="panel-block">
-            <input type="checkbox" />
-            {item.text}
-        </label>
+        <TodoItem item={item}/>
       ))}
       <div className="panel-block">
         {items.length} items
