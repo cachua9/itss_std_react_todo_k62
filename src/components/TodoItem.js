@@ -5,13 +5,13 @@
 　・チェックボックスにチェックが入っているかアイテムをグレーアウトする
 */
 const handleClickCheckBox = (key) =>{
-  const element = document.getElementById(key);
-  if(element.style.color != 'grey'){
-    element.style.color = 'grey'
-  }
-  else{
-    element.style.color = 'black'
-  }
+  // const element = document.getElementById(key);
+  // if(element.style.color != 'grey'){
+  //   element.style.color = 'grey'
+  // }
+  // else{
+  //   element.style.color = 'black'
+  // }
 }
 
 function TodoItem( {item} ) {
